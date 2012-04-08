@@ -34,4 +34,12 @@ describe("Calculator", function() {
             assert(difference == 4);
         });
     });
+
+    // power not implemented, expected to fail
+    describe("#power", function() {
+        it("operates correctly", function() {
+            var result = Calculator.power(2, 5);
+            assert(result == 32);
+        });
+    });
 });
